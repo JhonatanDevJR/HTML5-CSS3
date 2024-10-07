@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste de colunas</title>
+    <style>
+        table{
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+        th,td{
+            border: 1px solid black;
+           padding: 10px;
+        }
+        col.NOME{
+            background-color: rgba(122, 48, 190, 0.733);
+            background-repeat:repeat-x ;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="NOME">
+            <col class="SEXO">
+            <col class="IDADE">
+            <col class="PROFISSÃO">
+        </colgroup>
+        <tr>
+            <th scope="col">NOME</th>
+            <th scope="col">SEXO</th>
+            <th scope="col">IDADE</th>
+            <th scope="col">PROFISSÃO</th>
+        </tr>
+        <tr>
+            <td>Jhonatan Henrique</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Pedro Junior</td>
+            <td>M</td>
+            <td>23</td>
+            <td>Desenvolvedor</td>
+        </tr>
+        <tr>
+            <td>Fernando Fernandes</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Desempregado</td>
+        </tr>
+    </table>
+</body>
+</html>
