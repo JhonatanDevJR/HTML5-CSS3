@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulário 7</h1>
+    <form action="cadastro.php" method="post">
+
+        <p>
+            <label for="estado">Estados:</label>
+            <select name="estado" id="estado">
+                <optgroup label="Região Sudeste"> 
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </optgroup>
+
+                <optgroup label="Região Nordeste">
+                    <option value="MA">Maranhão</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                </optgroup>
+            </select>
+        </p>
+        <p>
+            Profissões: <input type="text" value="" list="dlist">
+            <datalist id="dlist">
+                <option value="Professor">Prof</option>
+                <option value="Desenvolvedor" id="dev">Dev</option>
+                <option value="Advogado">Adv</option>
+            </datalist>
+        </p>
+        <p>
+            Deixe sua mensagem: <br>
+            <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Escreva aqui"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar" name="Enviar">
+            <input type="reset" value="Limpar" name="Limpar">
+        </p>
+    </form>
+</body>
+</html>
