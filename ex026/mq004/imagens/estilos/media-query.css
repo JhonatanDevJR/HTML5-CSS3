@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*Todas as demais versões*/
+
+@media print {
+    body{
+        background-image: url(../back-print.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: none;}
+    img#print{display: block;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and(min-width: 768px) and (max-width: 992px){ /*TABLET*/
+    body{
+        background-image: url(../back-tablet.jpg);
+    }
+    img#phone{display: none;}
+    img#tablet{display: block;}
+    img#print{display: none;}
+    img#pc{display: none;}
+    img#tv{display: none;}
+}
+
+@media screen and(min-width: 992px) and(max-width: 1200px){/*DESKTOP*/
+    
+}
+
+@media screen and(min-width:1200){/*GRANDES TELAS*/
+    
+}
