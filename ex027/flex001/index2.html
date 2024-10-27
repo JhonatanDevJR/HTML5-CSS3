@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbile box</title>
+    <style>
+        div.container{
+            background-color: salmon;
+            display: flex;
+            flex-direction: row;
+            flex-wrap:  wrap-reverse;
+        }
+        div.item{
+            background-color: lightgreen;
+            border: 1px solid rebeccapurple;
+            text-align: center;
+            flex: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a">Exemplo A</div>
+        <div class="item b">Exemplo B</div>
+        <div class="item c">Exemplo C</div>
+        <div class="item d">Exemplo D</div>
+        <div class="item e">Exemplo E</div>
+        <div class="item f">Exemplo F</div>
+        <div class="item g">Exemplo G</div>
+        <div class="item h">Exemplo H</div>
+
+    </div>
+</body>
+</html>
